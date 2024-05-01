@@ -1,1 +1,18 @@
+This is the instructions to run the project 4:
 
+1) download all files: P4init.m , raceStat.m , Proj4_MainScript.m , and Proj4_simulink
+2) run the files in the following order:
+  1) P4init.m
+  2) Proj4_MainScript.m
+
+The simulation should automatically be set to run for 3600 simulation seconds as written in the MainScript file when the simulation is called.
+The Simulation takes just under 10 minutes total, and should complete about 5 laps wihtout violating any parameters.
+
+The simulation is running without errors, but somewhere in the simulation model the speed it being governed to not exceed 5 mph. I'm not sure what is causing this as the 
+speed schedule is intending the car to reach 600 m/s on the straightaways and 20 m/s on the curves but for whatever reason it is. Since there is not a specified number of laps
+and you instructed me to turn it in as is I did not investigate this issue further. The PID & Pure pursuit driver is working as I understand it, and the battery SOC does not change 
+very much. Since the car does not exceed 5 mph, there is no regenerative braking reaching the battery. The regenerative breaking is disconnected from the battery right now because 
+I could not get the car to go faster than 5 mph and therefore could not troubleshoot the regeneration problem. Commented out of the model are some of my attempts to fix the 
+breaking and regeneration logic but as I said, I turned it in when I was told.
+
+Thank you again for a great semester, and thank you for all the help.
